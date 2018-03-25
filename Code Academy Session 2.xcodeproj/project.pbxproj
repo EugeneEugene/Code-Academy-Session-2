@@ -54,14 +54,22 @@
 		444EB1482067F3430085AFEE /* Code Academy Session 2 */ = {
 			isa = PBXGroup;
 			children = (
-				444EB1492067F3430085AFEE /* AppDelegate.swift */,
+				444EB15B2067F35B0085AFEE /* Supporting files */,
 				444EB14B2067F3430085AFEE /* ViewController.swift */,
 				444EB14D2067F3430085AFEE /* Main.storyboard */,
-				444EB1502067F3430085AFEE /* Assets.xcassets */,
-				444EB1522067F3430085AFEE /* LaunchScreen.storyboard */,
 				444EB1552067F3430085AFEE /* Info.plist */,
 			);
 			path = "Code Academy Session 2";
+			sourceTree = "<group>";
+		};
+		444EB15B2067F35B0085AFEE /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				444EB1492067F3430085AFEE /* AppDelegate.swift */,
+				444EB1502067F3430085AFEE /* Assets.xcassets */,
+				444EB1522067F3430085AFEE /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
