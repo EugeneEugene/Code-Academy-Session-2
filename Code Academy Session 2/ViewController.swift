@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet private weak var commentView: UITextView!
     @IBOutlet private weak var hidenTextField: UITextView!
     
-    
     private let jsonEncoder = JSONEncoder()
     private let jsonDecoder = JSONDecoder()
     

@@ -10,11 +10,11 @@ import UIKit
 
 struct Expense: Codable {
     
-    let amount: Double
-    let type: String
-    let date: Date
-    let location: String
-    let comment: String
+    private let amount: Double
+    private let type: String
+    private let date: Date
+    private let location: String
+    private let comment: String
     
     init(cost amount: Double, of type: String, on date: Date, in location: String, note comment: String) {
         self.amount = amount
@@ -24,7 +24,7 @@ struct Expense: Codable {
         self.comment = comment 
     }
     
-    func convertDataToString() -> String {
+    internal func convertDataToString() -> String {
         let dateString = date.toString()
         return "Amount: \(amount), Type: \(type), date: \(dateString), location: \(location), comment: \(comment)"
     }
