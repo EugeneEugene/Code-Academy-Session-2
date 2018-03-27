@@ -20,10 +20,10 @@ class ViewController: UIViewController {
     private let jsonEncoder = JSONEncoder()
     private let jsonDecoder = JSONDecoder()
     
-    @IBOutlet private var arrOfRequiredFields: [UITextField]!
+    @IBOutlet private var reauiredFields: [UITextField]!
     func areRequiredFieldsFilled() -> Bool {
         var everythingIsFilled = true
-        for field in arrOfRequiredFields {
+        for field in reauiredFields {
             guard let unwrapedValue = field.text, unwrapedValue != "" else {
                 renderRedRec(on: field)
                 everythingIsFilled = false
@@ -35,13 +35,9 @@ class ViewController: UIViewController {
     
     @IBAction private func sendRequest(_ sender: UIButton) {
         if areRequiredFieldsFilled() {
-            guard let amount = amountField.text else {
-                return
-            }
-            guard let type = typeField.text else {
-                return
-            }
-            guard let location = locationField.text else {
+            guard let amount = amountField.text,
+                let type = typeField.text,
+                let location = locationField.text else {
                 return
             }
             let comment = commentView.text
@@ -68,9 +64,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         commentView.isScrollEnabled = false
         hidenTextField.isScrollEnabled = false
-        // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    
 }
 

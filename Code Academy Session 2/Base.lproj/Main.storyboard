@@ -135,9 +135,9 @@
                         <outlet property="hidenTextField" destination="uEL-L3-EZO" id="MiK-cX-VF5"/>
                         <outlet property="locationField" destination="4Dd-Zh-lLp" id="FHc-6V-TQR"/>
                         <outlet property="typeField" destination="mpA-uB-o32" id="umQ-8i-1lh"/>
-                        <outletCollection property="arrOfRequiredFields" destination="jo4-Uy-kH5" collectionClass="NSMutableArray" id="DO3-xs-ocK"/>
-                        <outletCollection property="arrOfRequiredFields" destination="mpA-uB-o32" collectionClass="NSMutableArray" id="w2E-lU-eTc"/>
-                        <outletCollection property="arrOfRequiredFields" destination="4Dd-Zh-lLp" collectionClass="NSMutableArray" id="p8S-uQ-Qu3"/>
+                        <outletCollection property="reauiredFields" destination="jo4-Uy-kH5" collectionClass="NSMutableArray" id="DO3-xs-ocK"/>
+                        <outletCollection property="reauiredFields" destination="mpA-uB-o32" collectionClass="NSMutableArray" id="w2E-lU-eTc"/>
+                        <outletCollection property="reauiredFields" destination="4Dd-Zh-lLp" collectionClass="NSMutableArray" id="p8S-uQ-Qu3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
